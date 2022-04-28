@@ -10,6 +10,7 @@ public class Ejecutable {
     public static void main(String[] args) {
         // Se crea un objeto
         Hospital hospital = new Hospital();
+        Hospital hospital2 = new Hospital();
         
         // Se asigna valores particulares al objeto
         hospital.nombre = "Isidro Ayora";
@@ -20,6 +21,11 @@ public class Ejecutable {
         System.out.printf("%s - %d - %.2f\n", hospital.nombre,
                 hospital.numeroCamas, hospital.presupuesto);
         
-        // System.out.println(hospital.nombre + "-" + hospital.numeroCamas);
+        hospital2.nombre = "Hospital UTPL";
+        hospital2.numeroCamas = 20;
+        hospital2.presupuesto = 430567.50;
+        
+        System.out.printf("%s - %d - %.2f\n", hospital2.nombre,
+                hospital2.numeroCamas, hospital2.presupuesto);
     }
 }
